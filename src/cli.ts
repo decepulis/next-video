@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import nextEnv from '@next/env';
-nextEnv.loadEnvConfig(process.cwd());
+import log from './logger.js';
+nextEnv.loadEnvConfig(process.cwd(), undefined, log);
 
 import yargs from 'yargs/yargs';
 
